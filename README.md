@@ -1,16 +1,23 @@
-## Hi there 👋
+# Basic usage - all stats visible (default)
+/api/v1/user-stats.svg?userName=octocat
 
-<!--
-**Guru616/Guru616** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Show only specific stats
+/api/v1/user-stats.svg?userName=octocat&showCommits=false&showIssues=false
 
-Here are some ideas to get you started:
+# Custom width
+/api/v1/user-stats.svg?userName=octocat&width=600
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+# With custom theme
+/api/v1/user-stats.svg?userName=octocat&theme=ocean
+
+# Minimal stats display
+/api/v1/user-stats.svg?userName=octocat&showHandle=false&showCommitsThisYear=false&showPRs=false&showIssues=false
+
+# Custom animation speed
+/api/v1/user-stats.svg?userName=octocat&animationDuration=4
+
+# Hide the GitHub logo (widget becomes narrower at 300px)
+/api/v1/user-stats.svg?userName=octocat&showLogo=false
+
+# All parameters combined
+/api/v1/user-stats.svg?userName=octocat&width=700&theme=midnight&animationDuration=3&showCommitsThisYear=false
